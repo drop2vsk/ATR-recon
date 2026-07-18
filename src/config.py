@@ -1,16 +1,17 @@
 from pathlib import Path
+import pandas as pd
 
-BASE_DIR = Path(__file__).parent.parent
-SRC_FOLDER = BASE_DIR / "src"
-RESOURCE_FOLDER = BASE_DIR / "resouce"
-SOURCE_FILE = RESOURCE_FOLDER / "source/source_data.xlsx"
-TARGET_FILE = RESOURCE_FOLDER / "target/target_data.xlsx"
 
-DRIVER_CONFIG = RESOURCE_FOLDER / "driverconfig.xlsx"
+class FileGather:
+    def __init__(self):
+        self.root_dir = Path(__file__).resolve().parent.parent
+        self.resources_dir = self.root_dir / "resources"
+        self.sources_file = self.resources_dir / "source_files"
+        self.targets_file = self.resources_dir / "target_files"
 
-print(BASE_DIR)
-print(SRC_FOLDER)
-print(RESOURCE_FOLDER)
-print(SOURCE_FILE)
-print(TARGET_FILE)
-print(DRIVER_CONFIG)
+
+obj = FileGather()
+print(obj.root_dir)
+print(obj.resources_dir)
+print(obj.sources_file)
+print(obj.targets_file)
