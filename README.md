@@ -11,10 +11,13 @@ The primary objective is to automate data validation during ETL testing, data mi
 ## Features
 
 - Compare datasets from multiple sources:
-  - CSV
-  - Excel (`.xlsx`)
-  - TSV
-  - Database *(Planned — Oracle, Snowflake, PostgreSQL)*
+  - Files 
+    - CSV
+    - Excel (`.xlsx`)
+  - Database *(Planned)*
+    — Oracle
+    - Snowflake
+    - PostgreSQL
 - Metadata-driven execution via `driverconfig.xlsx`
 - Batch execution: run multiple test cases in a single invocation
 - Support for single and composite comparison keys
