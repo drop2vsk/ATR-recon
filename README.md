@@ -15,7 +15,7 @@ The primary objective is to automate data validation during ETL testing, data mi
     - CSV
     - Excel (`.xlsx`)
   - Database *(Planned)*
-    — Oracle
+    - Oracle
     - Snowflake
     - PostgreSQL
 - Metadata-driven execution via `driverconfig.xlsx`
